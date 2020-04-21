@@ -1,3 +1,8 @@
+<!--
+This template includes the logic for pagination.
+Minimum of 4 posts can be created in one page or else it displays a pagination bar 
+at the bottom to view the next posts in sequence.
+-->
 {% extends "blog/base.html" %}
 {% block content %}
     <h1 class="mb-3">Posts by {{ view.kwargs.username }} ({{ page_obj.paginator.count }})</h1>
