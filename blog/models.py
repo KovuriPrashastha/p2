@@ -3,6 +3,11 @@ from django.utils import timezone
 from django.contrib.auth.models import User
 from django.urls import reverse
 # Create your models here.
+#This class is defined for to hold the attributes of the posts
+'''
+CASCADE option is used so that when a user deletes his post then the
+users image should also be deleted
+'''
 class Post(models.Model):
     title = models.CharField(max_length=100)
     content = models.TextField()
